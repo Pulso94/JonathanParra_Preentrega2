@@ -1,5 +1,6 @@
 *{
-    margin: 0; padding: 0%;
+    margin: 0;
+    padding: 0%;
 }
 
 
@@ -11,8 +12,15 @@ padding-bottom: 10px;
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
+    position:sticky;
+    top: 0;
+    background-color: #ffffff;
+    opacity: 90%;
+}
+header div img {
+    width: 80%;
 }
 ul{
     gap: 40px;
@@ -21,38 +29,9 @@ ul{
     font-family: 'Montserrat', sans-serif;
     color: #ff68a1;
 }
-h1 {
+h1, h2, h3 {
     display: flex;
     justify-content: center;
-}
-.mi-h1 {
-    color: #ff68a1;
-    font-size: 2em;
-    text-align: center;
-    font-family: 'Lobster', sans-serif;
-    margin-top: 60px;
-}
-h2 {
-    display: flex;
-    justify-content: center;
-}
-.mi-h2{
-    color: #696969;
-    font-size: 1em;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 60px;
-}
-h3 {
-    display: flex;
-    justify-content: center;
-}
-.mi-h3 {
-    color: #696969;
-    font-size: 1em;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px 100px;
 }
 h4 {
     color: #ff68a1;
@@ -60,6 +39,31 @@ h4 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+.mi-h1 {
+    color: #ff68a1;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.mi-h2{
+    color: #696969;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+}
+
+.mi-h3 {
+    color: #696969;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 100px;
+}
+
 .cajas-home {
     display: flex;
     flex-flow: wrap;
@@ -91,7 +95,6 @@ h4 {
     font-size: 16px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-
 }
 .nos-home-btn:hover {
     background-color: #696969;
@@ -122,3 +125,29 @@ h4 {
 }
 
 /**FOOTER**/
+
+footer {
+    display: flex;
+    background-color: #696969;
+    margin-top: 100px;
+    padding: 40px 40px;
+
+}
+.footer-cajas {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+.insta, .wasap, .mail {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+.footer-p {
+    width: 300px;
+}

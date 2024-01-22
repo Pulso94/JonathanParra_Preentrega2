@@ -19,7 +19,7 @@ header {
     background-color: #ffffff;
     opacity: 90%;
 }
-header div img {
+.logo-header {
     width: 80%;
 }
 ul{
@@ -140,7 +140,6 @@ grid-area: aside;
 .grid-banner {
     display: grid;
     justify-content: center;
-
 }
 
 /**FOOTER**/
@@ -155,6 +154,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .linea-blanca {
     border: 1px solid white;
     margin: 20px 0;
@@ -182,4 +182,16 @@ footer {
 }
 .footer-p {
     width: 300px;
+}
+
+/**MEDIA QUERIES**/
+
+/**TABLETS**/
+@media (max-width:991px){
+    /**ESTILOS**/
+}
+
+/**CELULARES**/
+@media (max-width:480px){
+    /**ESTILOS**/
 }

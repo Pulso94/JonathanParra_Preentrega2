@@ -127,11 +127,12 @@ h3 {
     color: #696969;
 }
   
-p {
+.p-card {
     color: #696969;
+    font-family: 'Montserrat', sans-serif;
 }
   
-button {
+.btn-card {
     background-color: #ff68a1;
     color: white;
     border: none;
@@ -142,6 +143,7 @@ button {
     font-size: 14px;
     border-radius: 20px;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
   
 button:hover {
@@ -153,14 +155,14 @@ aside {
     background-color: #eeeeee;
     padding: 30px;
     color: #ff68a1;
+    font-family: 'Montserrat', sans-serif;
 }
-aside nav ul {
+.grid-aside nav ul li{
     list-style-type: none;
 }
-aside nav ul li {
-    color: #ff68a1;
+.grid-aside nav ul li a{
+    text-decoration: none;
 }
-
 /**FOOTER**/
 
 footer {

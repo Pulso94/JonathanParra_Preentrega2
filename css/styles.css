@@ -150,7 +150,20 @@ footer {
     background-color: #696969;
     margin-top: 100px;
     padding: 40px 40px;
-
+    background-image: url('../img/footer/footer_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.linea-blanca {
+    border: 1px solid white;
+    margin: 20px 0;
+  }
+.copy-rigth {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 .footer-cajas {
     display: flex;

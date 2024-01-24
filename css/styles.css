@@ -176,8 +176,17 @@ aside {
 .grid-aside nav ul li a{
     text-decoration: none;
 }
-/**FOOTER**/
 
+/**NOSOTROS**/
+.text-nos {
+    margin: 40px 0px;
+    padding: 0px 80px;
+    color: #696969;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/**FOOTER**/
 footer {
     display: flex;
     background-color: #696969;

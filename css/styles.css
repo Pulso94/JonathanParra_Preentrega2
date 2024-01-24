@@ -335,10 +335,43 @@ footer {
 
 /**TABLETS**/
 @media (max-width:991px){
-    /**ESTILOS**/
+    /**PRODUCTOS**/
+    .grid {
+        grid-template-areas: 
+        "aside aside"
+        "grilla grilla"
+        "grilla grilla"
+        ;
+    }
+    
+    aside {
+        margin-bottom: 30px;
+    }
+    
+    .grilla-productos {
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(5, 1fr);
+    }
 }
 
 /**CELULARES**/
 @media (max-width:480px){
-    /**ESTILOS**/
+    /**PRODUCTOS**/
+    .grid {
+        grid-template-areas: 
+        "aside"
+        "grilla"
+        "grilla"
+        ;
+    }
+    
+    aside {
+        margin-bottom: 30px;
+    }
+
+    .grilla-productos {
+        grid-template-columns: repeat(1, 250px);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
 }

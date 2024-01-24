@@ -103,7 +103,21 @@ h4 {
 }
 
 /**PRODUCTOS**/
-
+.prod-grid {
+    display: grid;
+    grid-template-areas: 
+    "aside grilla grilla"
+    "aside grilla grilla"
+    "aside grilla grilla"
+    ;
+}
+section .prod-grid {
+    grid-area: grilla;
+    grid-template-columns: repeat(3,300px);
+}
+aside {
+    grid-area: aside;
+}
 /**CARDS**/
 .card {
     border: 1px solid #dddddd;
@@ -145,10 +159,12 @@ h3 {
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
-  
+
 button:hover {
     background-color: #696969;
 }
+
+
 
 /**ASIDE**/
 aside {

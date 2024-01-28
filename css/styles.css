@@ -332,13 +332,7 @@ footer {
 }
 
 /**PSEUDOCLASES**/
-header nav ul li a:link{
-    color:#ff68a1;
-}
 
-header nav ul li a:visited{
-    color:#696969;
-}
 
 /**MEDIA QUERIES**/
 

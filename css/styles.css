@@ -3,6 +3,7 @@
     padding: 0%;
 }
 
+/*HEADER-------------------------------------------------------------*/
 .logo-header {
     padding-left: 20px;
     padding-top: 10px;
@@ -31,6 +32,16 @@ ul{
 .nav-item a {
     font-family: 'Montserrat', sans-serif;
     color: #ff68a1;
+}
+
+/*PAGINA HOME-------------------------------------------------------------*/
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/home-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3 {
@@ -81,7 +92,14 @@ h4 {
 
 .text-cajas {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
+}
+
+.text-cajas-p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #696969;
 }
 
 .home-nosotros {
@@ -117,9 +135,16 @@ h4 {
     gap: 40px;
 }
 
-/**PRODUCTOS**/
-
-    /**GRILLA**/
+/*PAGINA PRODUCTOS-------------------------------------------------------------*/
+.banner-productos {
+    width: 100%;
+    height: 280px;
+    background-image: url('../img/productos/banner-productos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/**Grilla**/
 .grid {
     display: grid;
     padding-top: 20px;
@@ -143,7 +168,7 @@ h4 {
     grid-area: aside;
 }
 
-    /**CARDS**/
+/**Cards**/
 .card {
     border: 1px solid #dddddd;
     border-radius: 10px;
@@ -190,7 +215,7 @@ button:hover {
     background-color: #696969;
 }
 
-    /**ASIDE**/
+/**Aside**/
 aside {
     background-color: #eeeeee;
     padding: 30px;
@@ -207,7 +232,7 @@ aside {
     text-decoration: none;
 }
 
-    /**BARRA DE BÚSQUEDA**/
+/**Barra de búsqueda**/
 .barra-busqueda {
     margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -242,20 +267,20 @@ aside {
     margin-top: 20px;
   }
   
-  .filtros-productos h3 {
+.filtros-productos h3 {
     margin-bottom: 10px;
-  }
+}
   
-  .filtros-productos form {
+.filtros-productos form {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .filtros-productos label {
+.filtros-productos label {
     margin-bottom: 8px;
-  }
+}
   
-  .filtros-productos button {
+.filtros-productos button {
     background-color:#ff68a1;
     color: white;
     border: none;
@@ -263,13 +288,32 @@ aside {
     cursor: pointer;
     border-radius: 40px;
     margin-top: 20px;
-  }
+}
   
-  .filtros-productos button:hover {
+.filtros-productos button:hover {
     background-color: #696969;
-  }
+}
 
-/**NOSOTROS**/
+/*PAGINA EVENTOS-------------------------------------------------------------*/
+.banner-eventos {
+    width: 100%;
+    height: 280px;
+    background-image: url('../img/eventos/banner-eventos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*PAGINA NOSOTROS-------------------------------------------------------------*/
+.banner-nosotros {
+    width: 100%;
+    height: 280px;
+    background-image: url('../img/nosotros/banner-nosotros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .text-nos {
     margin: 40px 0px;
     padding: 0px 80px;
@@ -277,7 +321,15 @@ aside {
     font-family: 'Montserrat', sans-serif;
 }
 
-/**CONTACTO**/
+/*PAGINA CONTACTO-------------------------------------------------------------*/
+.banner-contacto {
+    width: 100%;
+    height: 280px;
+    background-image: url('../img/contacto/banner-contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .mb-3 {
     color: #696969;
     font-family: 'Montserrat', sans-serif;
@@ -291,7 +343,7 @@ aside {
     padding: 10px 40px;
 }
 
-/**FOOTER**/
+/*FOOTER-------------------------------------------------------------*/
 footer {
     display: flex;
     background-color: #696969;
@@ -302,16 +354,19 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .linea-blanca {
     border: 1px solid white;
     margin: 20px 0;
-  }
+}
+
 .copy-rigth {
     color: #ffffff;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
+
 .footer-cajas {
     display: flex;
     gap: 100px;
@@ -321,60 +376,88 @@ footer {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
+
 .insta, .wasap, .mail {
     display: flex;
     align-items: center;
     justify-content: left;
     gap: 20px;
 }
+
 .footer-p {
     width: 300px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
-/**PSEUDOCLASES**/
-
-
-/**MEDIA QUERIES**/
+/*MEDIA QUERIES-------------------------------------------------------------*/
 
 /**TABLETS**/
 @media (max-width:991px){
-    /**PRODUCTOS**/
-    .grid {
-        grid-template-areas: 
-        "aside aside"
-        "grilla grilla"
-        "grilla grilla"
-        ;
-    }
+/**Home**/    
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+/**Productos**/
+.grid {
+    grid-template-areas: 
+    "aside aside"
+    "grilla grilla"
+    "grilla grilla"
+    ;
+}
     
-    aside {
-        margin-bottom: 30px;
-    }
+aside {
+    margin-bottom: 30px;
+}
     
-    .grilla-productos {
-        grid-template-columns: repeat(2, 250px);
-        grid-template-rows: repeat(5, 1fr);
-    }
+.grilla-productos {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(5, 1fr);
+}
+/**Footer**/
+.footer-cajas {
+    gap: 40px;
+}
+}
+
+/**INTERMEDIO**/
+@media (max-width: 600px) {
+/**Home**/
+.banner {
+    background-image: url('../img/home-banner-mobile.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/**Productos**/
+
+/**Contacto**/
+
 }
 
 /**CELULARES**/
 @media (max-width:480px){
-    /**PRODUCTOS**/
-    .grid {
-        grid-template-areas: 
-        "aside"
-        "grilla"
-        "grilla"
-        ;
-    }
-    
-    aside {
-        margin-bottom: 30px;
-    }
+/**Productos**/
+.grid {
+    grid-template-areas: 
+    "aside"
+    "grilla"
+    "grilla"
+    ;
+}
 
-    .grilla-productos {
-        grid-template-columns: repeat(1, 250px);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    
+aside {
+    margin-bottom: 30px;
+}
+
+.grilla-productos {
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(5, 1fr);
+}  
 }

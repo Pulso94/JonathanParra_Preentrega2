@@ -35,7 +35,7 @@ ul{
 }
 
 /*PAGINA HOME-------------------------------------------------------------*/
-.banner {
+.banner-home {
     width: 100%;
     height: 500px;
     background-image: url('../img/home-banner.jpg');
@@ -132,7 +132,7 @@ h4 {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 /*PAGINA PRODUCTOS-------------------------------------------------------------*/
@@ -156,8 +156,8 @@ h4 {
 }
 
 .grilla-productos {
-    grid-area: grilla;
     display: grid;
+    grid-area: grilla;
     grid-template-columns: repeat(3, 250px);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
@@ -396,7 +396,7 @@ footer {
 /**TABLETS**/
 @media (max-width:991px){
 /**Home**/    
-.banner {
+.banner-home {
     width: 100%;
     height: 400px;
 }
@@ -427,7 +427,7 @@ aside {
 /**INTERMEDIO**/
 @media (max-width: 600px) {
 /**Home**/
-.banner {
+.banner-home {
     background-image: url('../img/home-banner-mobile.jpg');
     width: 100%;
     height: 500px;

@@ -19,10 +19,9 @@ header {
     top: 0;
     background-color: #ffffff;
     opacity: 90%;
-}
-
-.logo-header {
-    width: 80%;
+    .logo-header {
+        width: 80%;
+    }
 }
 
 ul{
@@ -102,7 +101,7 @@ h4 {
     color: #696969;
 }
 
-.home-nosotros {
+.home-nosotros{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,22 +109,20 @@ h4 {
     background-color: #fff0f5;
     height: 400px;
     padding-top: 60px;
-}
-
-.nos-home-btn {
-    padding: 10px 40px;
-    border-radius: 40px;
-    margin-top: 20px;
-    border: none;
-    background-color: #ff68a1;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.nos-home-btn:hover {
-    background-color: #696969;
+    .nos-home-btn{
+        padding: 10px 40px;
+        border-radius: 40px;
+        margin-top: 20px;
+        border: none;
+        background-color: #ff68a1;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        &.nos-home-btn:hover {
+            background-color: #696969;
+        }
+    }
 }
 
 .mas-vendidos {
@@ -174,11 +171,10 @@ h4 {
     border-radius: 10px;
     overflow: hidden; /* Evita que el contenido se desborde */
     width: 250px;
-}
-  
-.card img {
-    width: 100%;
-    height: auto;
+    .card img {
+        width: 100%;
+        height: auto;
+    }
 }
   
 .contenido {
@@ -314,10 +310,24 @@ aside {
     background-repeat: no-repeat;
 }
 
-.text-nos {
-    margin: 40px 0px;
-    padding: 0px 80px;
-    color: #696969;
+.contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contenido-nosotros img{
+    width: 450px;
+    margin-bottom: 20px;
+}
+.nos-btn {
+    padding: 10px 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: #ff68a1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -341,6 +351,11 @@ aside {
     border: none;
     border-radius: 40px;
     padding: 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-btn button:hover{
+    color: #ffffff;
+    background-color: #696969;
 }
 
 /*FOOTER-------------------------------------------------------------*/
@@ -435,14 +450,19 @@ aside {
     background-position: center;
     background-repeat: no-repeat;
 }
-/**Productos**/
 
-/**Contacto**/
-
+.home-nosotros {
+    padding-top: 20px;
+}
 }
 
 /**CELULARES**/
 @media (max-width:480px){
+/**Home**/   
+.home-nosotros {
+    padding-top: 30px;
+}
+
 /**Productos**/
 .grid {
     grid-template-areas: 
@@ -459,5 +479,9 @@ aside {
 .grilla-productos {
     grid-template-columns: repeat(1, 250px);
     grid-template-rows: repeat(5, 1fr);
-}  
+}
+/**Nosotros**/
+.contenido-nosotros img{
+    width: 300px;
+}
 }

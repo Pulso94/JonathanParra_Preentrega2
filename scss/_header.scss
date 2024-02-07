@@ -1,0 +1,29 @@
+/*HEADER-------------------------------------------------------------*/
+.logo-header {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position:sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #ffffff;
+    opacity: 90%;
+    .logo-header {
+        width: 80%;
+    }
+}
+
+ul{
+    gap: 40px;
+}
+
+.nav-item a {
+    font-family: 'Montserrat', sans-serif;
+    color: #ff68a1;
+}

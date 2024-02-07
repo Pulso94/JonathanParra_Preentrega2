@@ -1,0 +1,79 @@
+/*MEDIA QUERIES-------------------------------------------------------------*/
+
+/**TABLETS**/
+@media (max-width:991px){
+    /**Home**/    
+    .banner-home {
+        width: 100%;
+        height: 400px;
+    }
+    
+    /**Productos**/
+    .grid {
+        grid-template-areas: 
+        "aside aside"
+        "grilla grilla"
+        "grilla grilla"
+        ;
+    }
+        
+    aside {
+        margin-bottom: 30px;
+    }
+        
+    .grilla-productos {
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    /**Footer**/
+    .footer-cajas {
+        gap: 40px;
+    }
+    }
+    
+    /**INTERMEDIO**/
+    @media (max-width: 600px) {
+    /**Home**/
+    .banner-home {
+        background-image: url('../img/home-banner-mobile.jpg');
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .home-nosotros {
+        padding-top: 20px;
+    }
+    }
+    
+    /**CELULARES**/
+    @media (max-width:480px){
+    /**Home**/   
+    .home-nosotros {
+        padding-top: 30px;
+    }
+    
+    /**Productos**/
+    .grid {
+        grid-template-areas: 
+        "aside"
+        "grilla"
+        "grilla"
+        ;
+    }
+    
+    aside {
+        margin-bottom: 30px;
+    }
+    
+    .grilla-productos {
+        grid-template-columns: repeat(1, 250px);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    /**Nosotros**/
+    .contenido-nosotros img{
+        width: 300px;
+    }
+    }

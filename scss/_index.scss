@@ -1,0 +1,98 @@
+/*PAGINA HOME-------------------------------------------------------------*/
+.banner-home {
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/home-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    color: #ff68a1;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mi-h1 {
+    color: #ff68a1;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.mi-h2{
+    color: #696969;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+    padding: 10px 60px;
+}
+
+.mi-h3 {
+    color: #696969;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 100px;
+}
+
+.cajas-home {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.text-cajas {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text-cajas-p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #696969;
+}
+
+.home-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff0f5;
+    height: 400px;
+    padding-top: 60px;
+    .nos-home-btn{
+        padding: 10px 40px;
+        border-radius: 40px;
+        margin-top: 20px;
+        border: none;
+        background-color: #ff68a1;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        &.nos-home-btn:hover {
+            background-color: #696969;
+        }
+    }
+}
+
+.mas-vendidos {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 20px;
+}

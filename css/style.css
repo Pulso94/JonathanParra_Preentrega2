@@ -4,7 +4,6 @@
   padding: 0%;
 }
 
-/*HEADER-------------------------------------------------------------*/
 .logo-header {
   padding-left: 20px;
   padding-top: 10px;
@@ -34,7 +33,6 @@ ul {
   color: #ff68a1;
 }
 
-/*PAGINA HOME-------------------------------------------------------------*/
 .banner-home {
   width: 100%;
   height: 500px;
@@ -133,7 +131,6 @@ h4 {
   gap: 20px;
 }
 
-/*PAGINA PRODUCTOS-------------------------------------------------------------*/
 .banner-productos {
   width: 100%;
   height: 280px;
@@ -143,7 +140,7 @@ h4 {
   background-repeat: no-repeat;
 }
 
-/**Grilla**/
+/*Grilla-------------------------------------------------------------*/
 .grid {
   display: grid;
   padding-top: 20px;
@@ -163,7 +160,7 @@ h4 {
   grid-area: aside;
 }
 
-/**Cards**/
+/*Cards-------------------------------------------------------------*/
 .card {
   border: 1px solid #dddddd;
   border-radius: 10px;
@@ -209,9 +206,9 @@ button:hover {
   background-color: #696969;
 }
 
-/**Aside**/
+/*Aside-------------------------------------------------------------*/
 aside {
-  background-color: #eeeeee;
+  background-color: #fff0f5;
   padding: 30px;
   color: #ff68a1;
   border-radius: 10px;
@@ -226,7 +223,7 @@ aside {
   text-decoration: none;
 }
 
-/**Barra de búsqueda**/
+/*Barra de búsqueda-------------------------------------------------------------*/
 .barra-busqueda {
   margin-bottom: 40px;
   font-family: "Montserrat", sans-serif;
@@ -257,7 +254,7 @@ aside {
   background-color: #696969;
 }
 
-/* Estilos para los filtros */
+/* Estilos para los filtros------------------------------------------------------------- */
 .filtros-productos {
   margin-top: 20px;
 }
@@ -289,7 +286,6 @@ aside {
   background-color: #696969;
 }
 
-/*PAGINA EVENTOS-------------------------------------------------------------*/
 .banner-eventos {
   width: 100%;
   height: 280px;
@@ -299,7 +295,6 @@ aside {
   background-repeat: no-repeat;
 }
 
-/*PAGINA NOSOTROS-------------------------------------------------------------*/
 .banner-nosotros {
   width: 100%;
   height: 280px;
@@ -332,7 +327,6 @@ aside {
   font-family: "Montserrat", sans-serif;
 }
 
-/*PAGINA CONTACTO-------------------------------------------------------------*/
 .banner-contacto {
   width: 100%;
   height: 280px;
@@ -361,7 +355,6 @@ aside {
   background-color: #696969;
 }
 
-/*FOOTER-------------------------------------------------------------*/
 footer {
   display: flex;
   background-color: #696969;
@@ -409,15 +402,14 @@ footer {
   font-size: 14px;
 }
 
-/*MEDIA QUERIES-------------------------------------------------------------*/
-/**TABLETS**/
+/*TABLETS-------------------------------------------------------------*/
 @media (max-width: 991px) {
   /**Home**/
   .banner-home {
     width: 100%;
     height: 400px;
   }
-  /**Productos**/
+  /*Productos*/
   .grid {
     grid-template-areas: "aside aside" "grilla grilla" "grilla grilla";
   }
@@ -428,14 +420,14 @@ footer {
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(5, 1fr);
   }
-  /**Footer**/
+  /*Footer*/
   .footer-cajas {
     gap: 40px;
   }
 }
-/**INTERMEDIO**/
+/*INTERMEDIO-------------------------------------------------------------*/
 @media (max-width: 600px) {
-  /**Home**/
+  /*Home*/
   .banner-home {
     background-image: url("../img/home-banner-mobile.jpg");
     width: 100%;
@@ -448,13 +440,13 @@ footer {
     padding-top: 20px;
   }
 }
-/**CELULARES**/
+/*CELULARES-------------------------------------------------------------*/
 @media (max-width: 480px) {
-  /**Home**/
+  /*Home*/
   .home-nosotros {
     padding-top: 30px;
   }
-  /**Productos**/
+  /*Productos*/
   .grid {
     grid-template-areas: "aside" "grilla" "grilla";
   }
@@ -465,7 +457,7 @@ footer {
     grid-template-columns: repeat(1, 250px);
     grid-template-rows: repeat(5, 1fr);
   }
-  /**Nosotros**/
+  /*Nosotros*/
   .contenido-nosotros img {
     width: 300px;
   }

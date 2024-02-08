@@ -1,4 +1,3 @@
-/*PAGINA HOME-------------------------------------------------------------*/
 .banner-home {
     width: 100%;
     height: 500px;
@@ -14,14 +13,14 @@ h1, h2, h3 {
 }
 
 h4 {
-    color: #ff68a1;
+    color: $color-primario;
     font-size: 1em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 
 .mi-h1 {
-    color: #ff68a1;
+    color: $color-primario;
     font-size: 2em;
     text-align: center;
     font-family: 'Lobster', sans-serif;
@@ -30,7 +29,7 @@ h4 {
 }
 
 .mi-h2{
-    color: #696969;
+    color: $color-secundario;
     font-size: 1em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -39,7 +38,7 @@ h4 {
 }
 
 .mi-h3 {
-    color: #696969;
+    color: $color-secundario;
     font-size: 1em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -63,7 +62,7 @@ h4 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    color: #696969;
+    color: $color-secundario;
 }
 
 .home-nosotros{
@@ -71,7 +70,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #fff0f5;
+    background-color: $color-terciario;
     height: 400px;
     padding-top: 60px;
     .nos-home-btn{
@@ -79,13 +78,13 @@ h4 {
         border-radius: 40px;
         margin-top: 20px;
         border: none;
-        background-color: #ff68a1;
+        background-color: $color-primario;
         color: white;
         font-size: 16px;
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
         &.nos-home-btn:hover {
-            background-color: #696969;
+            background-color: $color-secundario;
         }
     }
 }

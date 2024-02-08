@@ -1,14 +1,13 @@
-/*MEDIA QUERIES-------------------------------------------------------------*/
-
-/**TABLETS**/
+/*TABLETS-------------------------------------------------------------*/
 @media (max-width:991px){
+    
     /**Home**/    
     .banner-home {
         width: 100%;
         height: 400px;
     }
     
-    /**Productos**/
+    /*Productos*/
     .grid {
         grid-template-areas: 
         "aside aside"
@@ -25,15 +24,16 @@
         grid-template-columns: repeat(2, 250px);
         grid-template-rows: repeat(5, 1fr);
     }
-    /**Footer**/
+    /*Footer*/
     .footer-cajas {
         gap: 40px;
     }
     }
     
-    /**INTERMEDIO**/
+    /*INTERMEDIO-------------------------------------------------------------*/
     @media (max-width: 600px) {
-    /**Home**/
+
+    /*Home*/
     .banner-home {
         background-image: url('../img/home-banner-mobile.jpg');
         width: 100%;
@@ -48,14 +48,15 @@
     }
     }
     
-    /**CELULARES**/
+    /*CELULARES-------------------------------------------------------------*/
     @media (max-width:480px){
-    /**Home**/   
+
+    /*Home*/   
     .home-nosotros {
         padding-top: 30px;
     }
     
-    /**Productos**/
+    /*Productos*/
     .grid {
         grid-template-areas: 
         "aside"
@@ -72,7 +73,8 @@
         grid-template-columns: repeat(1, 250px);
         grid-template-rows: repeat(5, 1fr);
     }
-    /**Nosotros**/
+
+    /*Nosotros*/
     .contenido-nosotros img{
         width: 300px;
     }

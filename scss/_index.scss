@@ -48,21 +48,18 @@ h4 {
 .cajas-home {
     display: flex;
     flex-flow: wrap;
-    gap: 20px;
     justify-content: center;
+    text-align: center;
+    gap: 20px;
     margin-bottom: 40px;
-}
-
-.text-cajas {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.text-cajas-p {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: $color-secundario;
+    .text-cajas {
+        margin-top: 30px;
+        .text-cajas-p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            color: $color-secundario;
+        }
+    }
 }
 
 .home-nosotros{
@@ -94,4 +91,28 @@ h4 {
     flex-flow: wrap;
     justify-content: center;
     gap: 20px;
+    .card {
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        overflow: hidden; /* Evita que el contenido se desborde */
+        width: 250px;
+        .contenido {
+            padding: 16px;
+            text-align: center;
+            .titulo-card {
+                color: $color-primario;
+                font-size: 18px;
+                font-family: 'Montserrat', sans-serif;
+                .parrafo-card {
+                    color: $color-secundario;
+                    font-family: 'Montserrat', sans-serif;
+                    .card img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }          
 }
+

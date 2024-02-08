@@ -24,40 +24,34 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
     justify-content: center;
-}
-
-.grilla-aside {
-    grid-area: aside;
+    .card {
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        overflow: hidden; /* Evita que el contenido se desborde */
+        width: 250px;
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 /*Cards-------------------------------------------------------------*/
-.card {
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    overflow: hidden; /* Evita que el contenido se desborde */
-    width: 250px;
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-}
-  
+
 .contenido {
     padding: 16px;
     text-align: center;
-}
-
-.titulo-card {
-    color: $color-primario;
-    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-}
-
-.parrafo-card {
     color: $color-secundario;
-    font-family: 'Montserrat', sans-serif;
+    .titulo-card {
+        color: $color-primario;
+        font-size: 20px;
+        .parrafo-card {
+            font-size: 16px;
+        }
+    }
 }
-  
+
 .btn-card {
     background-color: $color-primario;
     color: white;
@@ -71,13 +65,13 @@
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
-
 button:hover {
     background-color: $color-secundario;
 }
 
 /*Aside-------------------------------------------------------------*/
 aside {
+    grid-area: aside;
     background-color: $color-terciario;
     padding: 30px;
     color: $color-primario;
@@ -85,15 +79,6 @@ aside {
     font-family: 'Montserrat', sans-serif;
 }
 
-.grilla-aside nav ul li{
-    list-style-type: none;
-}
-
-.grilla-aside nav ul li a{
-    text-decoration: none;
-}
-
-/*Barra de búsqueda-------------------------------------------------------------*/
 .barra-busqueda {
     margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;

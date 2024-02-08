@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0%;
@@ -83,18 +82,15 @@ h4 {
 .cajas-home {
   display: flex;
   flex-flow: wrap;
-  gap: 20px;
   justify-content: center;
+  text-align: center;
+  gap: 20px;
   margin-bottom: 40px;
 }
-
-.text-cajas {
-  text-align: center;
+.cajas-home .text-cajas {
   margin-top: 30px;
 }
-
-.text-cajas-p {
-  text-align: center;
+.cajas-home .text-cajas .text-cajas-p {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #696969;
@@ -130,6 +126,29 @@ h4 {
   justify-content: center;
   gap: 20px;
 }
+.mas-vendidos .card {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden; /* Evita que el contenido se desborde */
+  width: 250px;
+}
+.mas-vendidos .card .contenido {
+  padding: 16px;
+  text-align: center;
+}
+.mas-vendidos .card .contenido .titulo-card {
+  color: #ff68a1;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.mas-vendidos .card .contenido .titulo-card .parrafo-card {
+  color: #696969;
+  font-family: "Montserrat", sans-serif;
+}
+.mas-vendidos .card .contenido .titulo-card .parrafo-card .card img {
+  width: 100%;
+  height: auto;
+}
 
 .banner-productos {
   width: 100%;
@@ -155,37 +174,30 @@ h4 {
   gap: 20px;
   justify-content: center;
 }
-
-.grilla-aside {
-  grid-area: aside;
-}
-
-/*Cards-------------------------------------------------------------*/
-.card {
+.grilla-productos .card {
   border: 1px solid #dddddd;
   border-radius: 10px;
   overflow: hidden; /* Evita que el contenido se desborde */
   width: 250px;
 }
-.card .card img {
+.grilla-productos .card .card img {
   width: 100%;
   height: auto;
 }
 
+/*Cards-------------------------------------------------------------*/
 .contenido {
   padding: 16px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #696969;
 }
-
-.titulo-card {
+.contenido .titulo-card {
   color: #ff68a1;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
 }
-
-.parrafo-card {
-  color: #696969;
-  font-family: "Montserrat", sans-serif;
+.contenido .titulo-card .parrafo-card {
+  font-size: 16px;
 }
 
 .btn-card {
@@ -208,6 +220,7 @@ button:hover {
 
 /*Aside-------------------------------------------------------------*/
 aside {
+  grid-area: aside;
   background-color: #fff0f5;
   padding: 30px;
   color: #ff68a1;
@@ -215,15 +228,6 @@ aside {
   font-family: "Montserrat", sans-serif;
 }
 
-.grilla-aside nav ul li {
-  list-style-type: none;
-}
-
-.grilla-aside nav ul li a {
-  text-decoration: none;
-}
-
-/*Barra de búsqueda-------------------------------------------------------------*/
 .barra-busqueda {
   margin-bottom: 40px;
   font-family: "Montserrat", sans-serif;
@@ -457,6 +461,7 @@ footer {
     grid-template-columns: repeat(1, 250px);
     grid-template-rows: repeat(5, 1fr);
   }
+  /*Eventos*/
   /*Nosotros*/
   .contenido-nosotros img {
     width: 300px;

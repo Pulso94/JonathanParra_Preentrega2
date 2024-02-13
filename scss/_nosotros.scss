@@ -1,10 +1,14 @@
 .banner-nosotros {
-    width: 100%;
-    height: 280px;
+    @extend %banner-secciones;
     background-image: url('../img/nosotros/banner-nosotros.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+.nos-h1 {
+    @extend %h1;
+}
+
+.nos-h2{
+    @extend %h2;
 }
 
 .contenido-nosotros {
@@ -12,20 +16,23 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.contenido-nosotros img{
+    img{
     width: 450px;
     margin-bottom: 20px;
+    }
 }
 
 .nos-btn {
     padding: 10px 40px;
     border-radius: 40px;
     border: none;
-    background-color: $color-primario;
+    background-color: map-get($colores, color-primario);
     color: white;
     font-size: 16px;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fuente-secundaria;
+    &:hover {
+        background-color: map-get($colores, color-secundario);
+        transition: .4s;
+    }   
 }

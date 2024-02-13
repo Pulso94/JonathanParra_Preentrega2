@@ -54,24 +54,47 @@
     /*Home*/   
     .home-nosotros {
         padding-top: 30px;
-    }
+        }
+
+    .mas-vendidos {
+        gap: 40px;
+        .card {
+            width: 70%;
+            .contenido {
+                padding: 20px;
+                text-align: center;
+                .titulo-card {
+                    font-size: 22px;
+                }
+            }
+        }          
+    }        
     
     /*Productos*/
+ 
     .grid {
         grid-template-areas: 
         "aside"
         "grilla"
         "grilla"
         ;
-    }
+        }
     
     aside {
         margin-bottom: 30px;
-    }
+        }
     
-    .grilla-productos {
-        grid-template-columns: repeat(1, 250px);
-        grid-template-rows: repeat(5, 1fr);
+.grilla-productos {
+    grid-template-columns: repeat(1, 70%);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 40px;
+    .card {
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            }
+        }
     }
 
    /*Eventos*/
@@ -79,5 +102,11 @@
     /*Nosotros*/
     .contenido-nosotros img{
         width: 300px;
-    }
+        }
+
+    /*Contacto*/
+    .formulario {
+        padding: 40px;
+        border-radius: 0px;
+        }      
     }

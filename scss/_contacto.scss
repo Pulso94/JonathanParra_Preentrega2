@@ -1,25 +1,37 @@
 .banner-contacto {
-    width: 100%;
-    height: 280px;
+    @extend %banner-secciones;
     background-image: url('../img/contacto/banner-contacto.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-.mb-3 {
-    color: $color-secundario;
-    font-family: 'Montserrat', sans-serif;
+
+.contact-h1 {
+    @extend %h1;
+}
+
+.contact-h2{
+    @extend %h2;
+    margin-bottom: 60px
+}
+
+.formulario {
+    background-color: map-get($colores, color-terciario);
+    padding: 80px;
+    border-radius: 10px;
+    .mb-3 {
+        color: $color-secundario;
+        font-family: $fuente-secundaria;
+    }
 }
 
 .btn {
     color: #ffffff;
-    background-color: $color-primario;
+    background-color: map-get($colores, color-primario);
     border: none;
     border-radius: 40px;
     padding: 10px 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fuente-secundaria;
+    &:hover{
+        color: #ffffff;
+        background-color: map-get($colores, color-secundario);
+    }
 }
-.contact-btn button:hover{
-    color: #ffffff;
-    background-color: $color-secundario;
-}
+

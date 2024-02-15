@@ -302,7 +302,7 @@ aside .barra-busqueda input {
   text-align: center;
 }
 .contenido-nosotros img {
-  width: 450px;
+  width: 500px;
   margin-bottom: 20px;
 }
 
@@ -484,7 +484,6 @@ footer .footer-cajas .footer-p {
     width: 100%;
     height: auto;
   }
-  /*Eventos*/
   /*Nosotros*/
   .contenido-nosotros img {
     width: 400px;

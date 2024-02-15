@@ -7,6 +7,20 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    .footer-cajas {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #ffffff;
+        font-family: $fuente-secundaria;
+        .footer-p {
+            width: 300px;
+            color: #ffffff;
+            font-size: 14px;
+        }   
+    }
 }
 
 .linea-blanca {
@@ -21,15 +35,6 @@ footer {
     text-align: center;
 }
 
-.footer-cajas {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-}
 
 .insta, .wasap, .mail {
     display: flex;
@@ -38,9 +43,3 @@ footer {
     gap: 20px;
 }
 
-.footer-p {
-    width: 300px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-}

@@ -1,5 +1,9 @@
 /*TABLETS-------------------------------------------------------------*/
 @media (max-width:991px){
+    /**Menú**/
+    ul{
+        gap: 0px;     
+    }
     
     /**Home**/    
     .banner-home {
@@ -28,6 +32,9 @@
     .footer-cajas {
         gap: 40px;
     }
+    .formulario {
+        width: 80%;
+        }      
     }
     
     /*INTERMEDIO-------------------------------------------------------------*/
@@ -46,6 +53,10 @@
     .home-nosotros {
         padding-top: 20px;
     }
+
+    .formulario {
+        width: 600px;
+        }      
     }
     
     /*CELULARES-------------------------------------------------------------*/
@@ -59,7 +70,7 @@
     .mas-vendidos {
         gap: 40px;
         .card {
-            width: 70%;
+            width: 80%;
             .contenido {
                 padding: 20px;
                 text-align: center;
@@ -71,7 +82,6 @@
     }        
     
     /*Productos*/
- 
     .grid {
         grid-template-areas: 
         "aside"
@@ -84,15 +94,15 @@
         margin-bottom: 30px;
         }
     
-.grilla-productos {
-    grid-template-columns: repeat(1, 70%);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 40px;
-    .card {
-        width: 100%;
-        img {
+    .grilla-productos {
+        grid-template-columns: repeat(1, 70%);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 40px;
+        .card {
             width: 100%;
-            height: auto;
+            img {
+                width: 100%;
+                height: auto;
             }
         }
     }
@@ -101,11 +111,12 @@
 
     /*Nosotros*/
     .contenido-nosotros img{
-        width: 300px;
+        width: 400px;
         }
 
     /*Contacto*/
     .formulario {
+        width: 100%;
         padding: 40px;
         border-radius: 0px;
         }      

@@ -1,6 +1,7 @@
 .banner-eventos {
     @extend %banner-secciones;
     background-image: url('../img/eventos/banner-eventos.jpg');
+    margin-bottom: 60px;
 }
 
 .ev-h1 {
